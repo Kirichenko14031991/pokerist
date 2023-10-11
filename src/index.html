@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./images/search.svg" />
-    <title>goit-js-hw-11</title>
+    <script src="/libs/rain.js" defer></script>
   </head>
   <body>
-    <div class="search-div">
-      <form class="search-form" id="search-form">
-        <input
-          type="text"
-          name="searchQuery"
-          autocomplete="off"
-          placeholder="Search images..."
-          class="input"
-        />
-        <button type="submit" class="submit-button">
-          <svg class="icon" width="20" height="20">
-            <use href="./images/search.svg#icon-search"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
-    <div class="gallery" id="gallery"></div>
-    <div class="load-more-btn"> 
-      <button type="button" class="load-more" id="load-more">Load more</button>
-    </div>
-    <script src="./index.js" type="module"></script>
+    <section class="layers">
+      <div class="layers__container">
+        <div class="hero-content">
+          <h1>Bobrynets <span>Poker Club</span></h1>
+        </div>
+        <div
+          class="layers__item layer-1"
+          style="background-image: url(./img/layer-1.jpg)"
+        ></div>
+        <div
+          class="layers__item layer-2"
+          style="background-image: url(./img/layer-2.png)"
+        ></div>
+        <div class="layers__item layer-3">
+          <div class="logo" style="background-image: url(./img/logo.png)"></div>
+          <div class="hero-content__p">
+            Just click the button and join.
+            <a
+              href="https://invite.viber.com/?g=cMs16GwyKFAcoFwjPJCo540tKFQOWh04"
+              target="_blank"
+            >
+              <button class="button">Start playing!</button>
+            </a>
+          </div>
+        </div>
+        <div class="layers__item layer-4">
+          <canvas class="rain"></canvas>
+        </div>
+        <div
+          class="layers__item layer-5"
+          style="background-image: url(./img/layer-5.png)"
+        ></div>
+        <div
+          class="layers__item layer-6"
+          style="background-image: url(./img/layer-6.png)"
+        ></div>
+      </div>
+    </section>
+    <script src="/src/libs/rain.js" defer></script>
+    <script src="/src/index.js" type="module"></script>
   </body>
 </html>
