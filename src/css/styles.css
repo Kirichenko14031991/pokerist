@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 20px; 
+}
+  
+  /* форма пошуку */
+  .search-div {
+   display: flex;
+   align-items: center;
+   background-color: gold;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+  }
+   
+  .input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* галерея */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .photo-wrap {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .information {
+    padding: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  .information-item {
+    margin: 5px 0;
+  }
+  
+  
+  /* "Load more" */
+  .load-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .load-more {
+    padding: 15px 30px; 
+    background-color: #ff3366; 
+    color: #fff;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 18px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more:hover {
+    background-color: #ff0055; 
+  }
+  
+  .load-more:focus {
+    outline: none;
+  }
+  
+  .gallery-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .gallery-link:hover {
+    opacity: 0.7;
+  }
+  
